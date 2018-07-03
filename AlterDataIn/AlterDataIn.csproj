@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Authors>Celso Jr</Authors>
+        <Company>PNCQ - Programa Nacional de Controle de Qualidade</Company>
+        <PackageProjectUrl>https://github.com/pncq/alterdatain</PackageProjectUrl>
+        <RepositoryUrl></RepositoryUrl>
+        <PackageTags>API;Integração;.netcore;.netstandard;AlterDataIn</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>AlterDataIn é um componente que visa facilitar a geração da estrutura do Arquivo de Importação de Dados para o ERP</Description>
+        <PackageLicenseUrl>https://github.com/pncq/alterdatain/blob/master/LICENSE</PackageLicenseUrl>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="CodeCracker.CSharp" Version="1.1.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+</Project>
