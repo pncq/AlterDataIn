@@ -25,7 +25,15 @@ Install-Package AlterDataIn
 | 0001 | Identificador | 1 | 6 | 6 | 0 | N | Fixo "001000" |
 | 0002 | Identificador Clientes | 7 | 14 | 8 | 0 | C | Fixo "CLIENTES" |
 
-Continua ...
+#### Clientes - Detail 1 - Dados Principais
+| Núm.                | Campo  | Inicial | Final            | Tam.| Dec. | Tipo | Observação |
+| ---                 | ---    | ---     | ---              | --- | ---  | ---  | --- |
+| 0001 | Identificador | 1 | 6 | 6 | 0 | N | Fixo "001001" |
+| 0002 | Código de Chamada | 7 | 12 | 6 | 0 | N | |
+| 0003 | Nome do Cliente | 13 | 62 | 50 | 0 | C | |
+| 0004 | Tipo de Pessoa | 63 | 63 | 1 | 0 | C | \<F\>ísica ou \<J\>urídica |
+| 0005 | Nome Curto | 64 | 83 | 20 | 0 | C | |
+| 0006 | CNPJ/CPF | 84 | 101 | 18| 0 | C | |
 
 ## License
 

@@ -10,6 +10,8 @@ using AlterDataIn.Domain.ContasReceber;
 
 namespace AlterDataIn.Tests.Layouts
 {
+    using static FakeContasReceber;
+
     public class LayoutContasReceber
     {
         [Fact]
@@ -22,7 +24,7 @@ namespace AlterDataIn.Tests.Layouts
             conteudo.AppendLine(Arquivo.GetHeader);
             conteudo.AppendLine(ContasReceber.GetHeader);
 
-            conteudo.Append(FakeContasReceber.RetornaContasReceberDadosPrincipais.First()).AppendLine();
+            conteudo.Append(RetornaContasReceberDadosPrincipais.First()).AppendLine();
 
             conteudo.AppendLine(ContasReceber.GetTrailler);
             conteudo.Append(Arquivo.GetTrailler);
@@ -56,7 +58,7 @@ namespace AlterDataIn.Tests.Layouts
             conteudo.AppendLine(Arquivo.GetHeader);
             conteudo.AppendLine(ContasReceber.GetHeader);
 
-            conteudo.Append(FakeContasReceber.RetornaContasReceberItensTitulo.First()).AppendLine();
+            conteudo.Append(RetornaContasReceberItensTitulo.First()).AppendLine();
 
             conteudo.AppendLine(ContasReceber.GetTrailler);
             conteudo.Append(Arquivo.GetTrailler);
@@ -90,7 +92,7 @@ namespace AlterDataIn.Tests.Layouts
             conteudo.AppendLine(Arquivo.GetHeader);
             conteudo.AppendLine(ContasReceber.GetHeader);
 
-            conteudo.Append(FakeContasReceber.RetornaContasReceberRepasse.First()).AppendLine();
+            conteudo.Append(RetornaContasReceberRepasse.First()).AppendLine();
 
             conteudo.AppendLine(ContasReceber.GetTrailler);
             conteudo.Append(Arquivo.GetTrailler);
@@ -125,13 +127,13 @@ namespace AlterDataIn.Tests.Layouts
             conteudo.AppendLine(Arquivo.GetHeader);
             conteudo.AppendLine(ContasReceber.GetHeader);
 
-            FakeContasReceber.RetornaContasReceberDadosPrincipais.ToList()
+            RetornaContasReceberDadosPrincipais.ToList()
                 .ForEach(c => conteudo.Append(c).AppendLine());
 
-            FakeContasReceber.RetornaContasReceberItensTitulo.ToList()
+            RetornaContasReceberItensTitulo.ToList()
                 .ForEach(c => conteudo.Append(c).AppendLine());
 
-            FakeContasReceber.RetornaContasReceberRepasse.ToList()
+            RetornaContasReceberRepasse.ToList()
                 .ForEach(c => conteudo.Append(c).AppendLine());
 
             conteudo.AppendLine(ContasReceber.GetTrailler);
@@ -175,18 +177,18 @@ namespace AlterDataIn.Tests.Layouts
             conteudo.Append(new ContasReceber
             {
                 ContasReceberHeader = new ContasReceberHeader(),
-                ContasReceberDadosPrincipais = FakeContasReceber.RetornaContasReceberDadosPrincipais.First(),
-                ContasReceberItensTitulo = FakeContasReceber.RetornaContasReceberItensTitulo.First(),
-                ContasReceberRepasse = FakeContasReceber.RetornaContasReceberRepasse.First(),
+                ContasReceberDadosPrincipais = RetornaContasReceberDadosPrincipais.First(),
+                ContasReceberItensTitulo = RetornaContasReceberItensTitulo.First(),
+                ContasReceberRepasse = RetornaContasReceberRepasse.First(),
                 ContasReceberHeaderTrailler = new ContasReceberHeaderTrailler()
             });
 
             conteudo.Append(new ContasReceber
             {
                 ContasReceberHeader = new ContasReceberHeader(),
-                ContasReceberDadosPrincipais = FakeContasReceber.RetornaContasReceberDadosPrincipais.Last(),
-                ContasReceberItensTitulo = FakeContasReceber.RetornaContasReceberItensTitulo.Last(),
-                ContasReceberRepasse = FakeContasReceber.RetornaContasReceberRepasse.Last(),
+                ContasReceberDadosPrincipais = RetornaContasReceberDadosPrincipais.Last(),
+                ContasReceberItensTitulo = RetornaContasReceberItensTitulo.Last(),
+                ContasReceberRepasse = RetornaContasReceberRepasse.Last(),
                 ContasReceberHeaderTrailler = new ContasReceberHeaderTrailler()
             });
 
