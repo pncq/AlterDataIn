@@ -2,7 +2,7 @@
 
 namespace AlterDataIn.Domain.ContasReceber
 {
-    public sealed class ContasReceberHeaderTrailler : AlterdataBase
+    public sealed class ContasReceberTrailler : AlterdataBase
     {
         private string identificador;
         private string dataDados;
@@ -19,7 +19,7 @@ namespace AlterDataIn.Domain.ContasReceber
             set { dataDados = PreencherComEspacos(value, 8); }
         }
 
-        public ContasReceberHeaderTrailler()
+        public ContasReceberTrailler()
         {
             Identificador = "002999";
             DataDados = DateTime.Today.ToString("ddMMyyyy");

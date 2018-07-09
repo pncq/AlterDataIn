@@ -277,5 +277,68 @@ namespace AlterDataIn.Tests.Fakes
             }
         }
 
+        public static IEnumerable<ClientesCaracteristicas> RetornaClientesCaracteristicas
+        {
+            get
+            {
+                yield return new ClientesCaracteristicas
+                {
+                    CodigoChamada = "00100",
+                    CodigoCaracteristica = "123456",
+                    DescricaoCaracteristica = "Descrição da Característica",
+                    CnpjCpf = "99.999.999/9999-99"
+                };
+
+                yield return new ClientesCaracteristicas
+                {
+                    CodigoChamada = "00200",
+                    CodigoCaracteristica = "654321",
+                    DescricaoCaracteristica = "podendo conter até",
+                    CnpjCpf = "88.888.888/8888-88"
+                };
+
+                yield return new ClientesCaracteristicas
+                {
+                    CodigoChamada = "00300",
+                    CodigoCaracteristica = "112233",
+                    DescricaoCaracteristica = "20 caracteres",
+                    CnpjCpf = "777.777.777-77"
+                };
+            }
+        }
+
+        public static IEnumerable<ClientesPessoaRelacionada> RetornaClientesPessoaRelacionada
+        {
+            get
+            {
+                yield return new ClientesPessoaRelacionada
+                {
+                    CodigoChamada = "00100",
+                    CodigoChamadaPessoaRelacionada = "123456",
+                    TipoPessoaRelacionada = "F",
+                    StatusPessoaRelacionadaPrincipal = "S",
+                    CnpjCpf = "99.999.999/9999-99"
+                };
+
+                yield return new ClientesPessoaRelacionada
+                {
+                    CodigoChamada = "00200",
+                    CodigoChamadaPessoaRelacionada = "654321",
+                    TipoPessoaRelacionada = "T",
+                    StatusPessoaRelacionadaPrincipal = "N",
+                    CnpjCpf = "88.888.888/8888-88"
+                };
+
+                yield return new ClientesPessoaRelacionada
+                {
+                    CodigoChamada = "00200",
+                    CodigoChamadaPessoaRelacionada = "112233",
+                    TipoPessoaRelacionada = "C",
+                    StatusPessoaRelacionadaPrincipal = "N",
+                    CnpjCpf = "777.777.777-77"
+                };
+            }
+        }
+
     }
 }

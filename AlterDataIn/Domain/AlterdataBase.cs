@@ -38,6 +38,5 @@ namespace AlterDataIn.Domain
                     : value + new string(' ', length - value.Length);
         }
 
-        protected static bool IsNull(string value) => string.IsNullOrWhiteSpace(value);
     }
 }

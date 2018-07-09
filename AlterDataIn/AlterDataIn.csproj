@@ -9,6 +9,7 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Description>AlterDataIn é um componente que visa facilitar a geração da estrutura do Arquivo de Importação de Dados para o ERP</Description>
         <PackageLicenseUrl>https://github.com/pncq/alterdatain/blob/master/LICENSE</PackageLicenseUrl>
+        <Version>1.0.1</Version>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="CodeCracker.CSharp" Version="1.1.0">
